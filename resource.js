@@ -6,11 +6,9 @@ const supabase = createClient('https://ugdxyltghpksaofeuxjy.supabase.co', 'eyJhb
 
 
 let { data: VODS, error } = await supabase
-.from('VODS')
-.select('*')
+  .from('VODS')
+  .select('id')
 
-for (x in VODS){
-    console.log(x)
+for (const vod of VODS){
+    console.log(vod);
 }
-
-const UNAVAILABLE_VOD = "There is no available VOD with these search filters."

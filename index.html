@@ -11,32 +11,98 @@
         <div class="container">
             <header>
                 <div class="head-left">
-                    <img src="/resources/valorant-logo-white.png" alt="logo">
+                    <a href=""><img src="/resources/valorant-logo-white.png" alt="logo"></a>
                 </div>
 
                 <div class="head-right">
-                    <p><a href="#">VODS</a></p>
-                    <p><a href="#">Players to Watch</a></p>
-                    <p><a href="#">Crosshairs</a></p>
+                    <p><a href="#pro-agent-section">VODS</a></p>
+                    <p><a href="">Players to Watch</a></p>
+                    <p><a href="#settings-section">Settings</a></p>
                     <p><a href="#">Patch Notes</a></p>
                 </div>
             </header>
             
             <section class="agent-section">
-                <div class="agent-vid">
+                <div class="agent-vid" id="pro-vod">
                     <video loop autoplay muted plays-inline class="agent-video">
                         <source src="./resources/valo_712.mp4" type="video/mp4">
                     </video>
 
                     <div class="agent-info">
                         <h1>VALORANT SIGHTS</h1>
-                        <p>Learn from the best</p>
+                        <p>Learn from the BEST</p>
                     </div>
                 </div>
+
+                <div class="filter-vod">
+
+                </div>
+            </section>
+
+            <section class="pro-vod" id="pro-agent-section">
+                <h1>Watch the Pros</h1>
+                <div class="vod-table">
+                    <table id="pro-vod-table">
+                        <tr class="header">
+                            <th style="width: 40px;">ID</th>
+                            <th style="width: 170px;">Player</th>
+                            <th style="width: 120px;">Agent</th>
+                            <th style="width: 120px;">Map</th>
+                            <th style="width: 280px;">Video</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="players-to-watch">
+
+            </section>
+
+            <section class="settings" id="settings-section">
+                <h3>Settings</h3>
+                <p>Here are the settings I use constantly.</p>
+                <div class="info-cards">
+                    <div class="card" id="graphics-quality">
+                        <h1>GRAPHICS QUALITY</h1>
+                        <img src="./resources/graphics-quality.png">
+                    </div>
+
+                    <div class="card">
+                        <h1>NORMAL RESOLUTION</h1>
+                        <img src="./resources/normal.png">
+                    </div>
+
+                    <div class="card">
+                        <h1>STRETCHED RESOLUTION</h1>
+                        <img src="./resources/stretched.png">
+                    </div>
+
+
+                    <div class="card">
+                        <h1>MAIN CROSSHAIR</h1>
+                        <img src="./resources/default.webp">
+                        <img src="./resources/main.png" class="crosshair-img">
+                        <button id="copyMain">COPY</button>
+                    </div>
+
+                    <div class="card">
+                        <h1>ALTERNATE CROSSHAIR</h1>
+                        <img src="./resources/orange.webp">
+                        <button id="copyAlt">COPY</button>
+                    </div>
+
+                    <div class="card">
+                        <h1>TEMPORARY CROSSHAIR</h1>
+                        <img src="./resources/blaugelb.webp">
+                        <button id="copyTemp">COPY</button>
+                    </div>
+                </div>
+
+                
             </section>
 
         </div>
 
-        <script src="app.js"></script>
+        <script type="module" src="app.js"></script>
     </body>
 </html>
