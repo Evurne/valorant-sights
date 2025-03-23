@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Valorant Agent Sights</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <main>
-            <img src="./resources/valorant-logo-white.png" width="100px" height="100px">
-            <h1>Valorant Sights</h1>
-            <H2>Check Pro Vods with Specific Agents</H2>
-            <!--Follow Tracker.GG website layout for Valorant-->
-            <!--| PRO PLAYER | AGENT | MAP |-->
-        </main>
+        <div class="container">
+            <header>
+                <div class="head-left">
+                    <img src="/resources/valorant-logo-white.png" alt="logo">
+                </div>
+
+                <div class="head-right">
+                    <p><a href="#">VODS</a></p>
+                    <p><a href="#">Players to Watch</a></p>
+                    <p><a href="#">Crosshairs</a></p>
+                    <p><a href="#">Patch Notes</a></p>
+                </div>
+            </header>
+            
+            <section class="agent-section">
+                <div class="agent-vid">
+                    <video loop autoplay muted plays-inline class="agent-video">
+                        <source src="./resources/valo_712.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="agent-info">
+                        <h1>VALORANT SIGHTS</h1>
+                        <p>Learn from the best</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <script src="app.js"></script>
     </body>
 </html>
